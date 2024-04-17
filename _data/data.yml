@@ -1,0 +1,212 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+
+sidebar:
+    position: right # position of the sidebar : left or right
+    about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
+    education: False # set to False if you want education in main section instead of in sidebar
+
+    # Profile information
+    name: Erhao Ge (Ethan)
+    tagline: PhD Candidate in Human Biology and Evolution
+    avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
+    # Sidebar links
+    email: ucsaege@ucl.ac.uk
+    phone: +44 07511 750443
+    timezone: GMT Timezone
+    citizenship:
+    website:  #do not add http://
+    linkedin: 
+    xing: 
+    github: erhaoGe
+    telegram: # add your nickname without '@' sign
+    gitlab:
+    bitbucket:
+    twitter:
+    stack-overflow: # Number/Username, e.g. 123456/alandoe
+    codewars:
+    goodreads: # Number-Username, e.g. 123456-alandoe
+    pdf: http://www.africau.edu/images/default/sample.pdf
+
+    languages:
+      title: Languages
+      info:
+        - idiom: Chinese
+          level: Native
+
+        - idiom: English
+          level: Professional
+
+career-profile:
+    title: Career Profile
+    summary: |
+      Summarise your career here lorem ipsum dolor sit amet, consectetuer
+      adipiscing elit. You can [download this free resume/CV template here]().
+      Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
+      penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      Donec quam felis, ultricies nec, pellentesque eu.
+      Second paragraph if required.
+education:
+    title: Education
+    info:
+      - degree: PhD Candidate in Human Biology and Evolution
+        university: University College London
+        time: 2020-2024
+        details: |
+          Describe your study here lorem ipsum dolor sit amet, consectetuer
+          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+          sociis natoque penatibus et magnis dis parturient montes, nascetur
+          ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+          pretium quis, sem.
+            - Bullet point
+            - Bullet point
+      - degree: Master's Degree in Ecology
+        university:  Lanzhou University
+        time: 2017-2020
+        details: |
+          Describe your study here lorem ipsum dolor sit amet, consectetuer
+          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+          sociis natoque penatibus et magnis dis parturient montes, nascetur
+          ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+          pretium quis, sem.
+            - Bullet point
+            - Bullet point
+      - degree: Bachelor's Degree in Biotechnology
+        university:  Lanzhou University
+        time: 2013-2017
+        details: |
+          Describe your study here lorem ipsum dolor sit amet, consectetuer
+          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+          sociis natoque penatibus et magnis dis parturient montes, nascetur
+          ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+          pretium quis, sem.
+            - Bullet point
+            - Bullet point
+
+experiences:
+    title: Experiences
+    info:
+      - role: Teaching Assistant in Anthropology Department
+        time: 2023-2024
+        details: |
+          Describe your role here lorem ipsum dolor sit amet, consectetuer
+          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+          Cum sociis natoque penatibus et magnis dis parturient montes,
+          nascetur ridiculus mus. Donec quam felis, ultricies nec,
+          pellentesque eu, pretium quis, sem. Nulla consequat massa quis
+          enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
+          error sit voluptatem accusantium doloremque laudantium, totam rem
+          aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+          architecto beatae vitae dicta sunt explicabo.
+            - Bullet point
+            - Bullet point
+            
+awards:
+    title: Scholarships And Awards
+    info: 
+      - time: 2022 
+        award: Chinese Government Award for Outstanding Self-financed Students Abroad
+        details: |
+          Recipient of the Chinese Government Award for Outstanding Self-financed Students Abroad, recognizing academic excellence and achievements while studying overseas.
+      - time: 2020
+        award: Fully Funded PhD Scholarship from European Research Commission
+        details: |
+          Selected for a highly competitive fully funded 4-year PhD scholarship awarded by the European Research Commission, supporting advanced research at UCL.
+      - time: 2019
+        award: National Scholarship for Chinese Postgraduate Studies
+        details: |
+          Recipient of the National Scholarship for Chinese Postgraduate Students, reflecting exceptional academic performance and contributions. 
+
+publications:
+    title: Publications
+    intro: |
+      You can list your publications in this section. Lorem ipsum dolor sit
+      amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
+      bibendum fringilla a eu lectus.
+    papers:
+      - title: Religiosity and gender bias structure social networks
+        link: "https://doi.org/10.1017/ehs.2024.16"
+        authors: Ge, E., Cairang, D., Mace, R.
+        time: 2024
+
+      - title: Sex Differences in Costly Signaling in Rural Western China
+        link: "#"
+        authors: Cairang, D.*, Ge, E.*, Du, J. & Mace, R.
+        time: 2023
+
+      - title: Sex inequality driven by dispersal
+        link: "#"
+        authors: Chen, Y., Ge, E., Zhou, L., Du, J. & Mace, R. 
+        time: 2023
+        
+      - title: Studying human culture with small datasets and evolutionary models
+        link: "#"
+        authors: Micheletti, A.J., Ge, E., Zhou, L., Chen, Y., Zhang, H., Du, J. & Mace, R. 
+        time: 2023
+            
+      - title: Religious celibacy brings inclusive fitness benefits
+        link: "#"
+        authors: Micheletti, A.J.*, Ge, E.*, Zhou, L.*, Chen, Y., Zhang, H., Du, J. et al.
+        time: 2022
+        
+      - title: Monks relax sibling competition over parental resources in Tibetan populations
+        link: "#"
+        authors: Zhou, L.*, Ge, E.*, Micheletti, A.J., Chen, Y., Du, J. & Mace, R.
+        time: 2022                   
+
+      - title: How evolutionary behavioural sciences can help us understand behaviour in a pandemic
+        link: "#"
+        authors: Arnot, M., Brandl, E., Campbell, O., Chen, Y., Du, J., Dyble, M., Ge,E., et al.
+        time: 2020  
+               
+      - title: Large-scale cooperation driven by reputation, not fear of divine punishment
+        link: "#"
+        authors: Ge, E. *, Chen, Y. *, Wu, J. & Mace, R.
+        time: 2019
+
+projects:
+    title: Academic
+    intro: >
+    assignments:
+      - title: Invited Guest Speaker
+        university: LEVYNA Laboratory, Masaryk University, Brno, Czech Republic
+        time: 2023
+        link: "#hook"
+        tagline: "Invited to deliver a speaker series talk and conduct a workshop at LEVYNA Laboratory, Masaryk University. Explored collaborative opportunities and shared research insights."
+
+      - title: Invited Summer Institute Participant
+        university: Yale University, USA
+        time: 2023
+        link: "#hook"
+        tagline: "Selected to join the Summer Institute in Cross-Cultural Anthropological Research at Yale University, HRAF. Explored diverse anthropological perspectives."
+
+      - title: Summer School Attendee
+        university: Institute for Advanced Study in Toulouse, France
+        time: 2021
+        link: "#hook"
+        tagline: "Participated in the Summer School in Quantitative Social Sciences at IAST, gaining valuable insights into quantitative methodologies."
+        
+oss:
+    title: Conference Presentation
+    intro: 
+    contributions:
+      - title: EHBEA Annual Conference Talk
+        link: "#"
+        tagline: Montpellier, France (2024)
+
+      - title: FRESH 4th Annual Conference Presentation
+        link: "#"
+        tagline: Paris, France (2023)
+
+      - title: HBES Annual Conference Presentation
+        link: "Delivered a talk during the Human Behavior and Evolution Society (HBES) Annual Meeting held in Palm Springs, USA."
+        tagline: Palm Springs, USA (2023) 
+        
+      - title: EHBEA Annual Conference Talk
+        link: "Presented a talk at the European Human Behaviour & Evolution Association (EHBEA) Annual Conference in London, UK."
+        tagline: London, UK (2023) 
+
+footer: >
+    Designed with <i class="fas fa-heart"></i> by <a href="https://erhaoge.github.io" target="_blank" rel="nofollow">Erhao Ge</a>
