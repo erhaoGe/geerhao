@@ -13,7 +13,7 @@ sidebar:
     avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
-    email: ucsaege@ucl.ac.uk
+    email: geerhao@gmail.com
     phone: +44 07511 750443
     timezone: GMT Timezone
     citizenship:
@@ -24,11 +24,11 @@ sidebar:
     telegram: # add your nickname without '@' sign
     gitlab:
     bitbucket:
-    twitter:
+    twitter: Erhao_Ge
     stack-overflow: # Number/Username, e.g. 123456/alandoe
     codewars:
     goodreads: # Number-Username, e.g. 123456-alandoe
-    pdf: http://www.africau.edu/images/default/sample.pdf
+    pdf: https://maifile.cn/est/d6628633c0325d/pdf
 
     languages:
       title: Languages
