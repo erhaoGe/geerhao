@@ -9,7 +9,7 @@ sidebar:
 
     # Profile information
     name: Erhao Ge (Ethan)
-    tagline: PhD Candidate in Human Biology and Evolution
+    tagline: PhD in Human Biology and Evolution, Anthropology department, University College London,UK
     avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
@@ -41,15 +41,15 @@ sidebar:
 
 career-profile:
     title: Career Profile
-    summary: I am a dedicated researcher and academic in the field of evolutionary anthropology, specializing in human biology, human behaviour, and ecology. I have published multiple scientific articles, assisted with teaching courses. I have also presented at renowned conferences and been invited as a guest speaker during my PhD career.
+    summary: In broad terms, my work falls under the field of computational social science. More specifically, I specialise in evolutionary anthropology. Over the past few years, I have approached the evolution of human social organisation and behavioural patterns from a behavioural ecology perspective, particularly focusing on their role in the transition from small, simple communities to large, complex societies. At the same time, I actively embrace interdisciplinary approaches. I enjoy engaging with perspectives from other disciplines to deepen my understanding of human behaviour and social structures. I am also open to exploring and adopting innovative scientific methods to enhance my research.
 education:
     title: Education
     info:
-      - degree: PhD Candidate in Human Biology and Evolution
+      - degree: PhD in Human Biology and Evolution
         university: University College London, UK
         time: 2020-2024
         details: |
-          During my PhD, I have been conducting research in evolutionary anthropology at University College London in UK, supported by a full scholarship. My research interests include social network analysis, demographic analysis, and related fields. During this time, I have published four papers in SCI journals as the lead author.
+          During my PhD, my broad research interests have centred on the evolution of cooperation and religion, and how these two fundamental concepts are associated with each other. I analyse social network data and demographic data, as well as use mathematical modelling, to explore the benefits of religious practices. During this time, I have published four papers in SCI journals as the lead author, marking significant milestones in this intellectual journey.
           
       - degree: Master's Degree in Ecology
         university:  Lanzhou University, CHINA
@@ -67,8 +67,8 @@ experiences:
     title: Experiences
     info:
       - role: Teaching Assistant in Anthropology Department
-        time: 2023-2024
-        details: I am a Teaching Assistant in the Anthropology Department at UCL for the 2023-2024 academic year. In this role, I facilitate the learning process for undergraduate students by organizing tutorial activities, leading tutorial groups in both biological anthropology and human ecology, and providing feedback on coursework. This position has enhanced my ability to communicate complex concepts in a clear and accessible way, a critical skill for undergraduate teaching. Additionally, I am responsible for grading assignments for courses in biological anthropology and human behavioural ecology.
+        time: 2023-2024；2024-2025
+        details: I am a Teaching Assistant in the Anthropology Department at UCL for the 2023-2024 and 2024-2025 academic years. In these roles, I facilitate the learning process for undergraduate students by organising tutorial activities, leading tutorial groups in biological anthropology, human ecology, and evolutionary medicine courses, and providing feedback on coursework. These positions have enhanced my ability to communicate complex concepts in a clear and accessible way, which is a critical skill for undergraduate teaching. Additionally, I am also a Teaching Assistant for the Research Methods in Biological Anthropology course. I am responsible for grading assignments for the Human Behavioural Ecology course.
             
 awards:
     title: Scholarships And Awards
