@@ -1,31 +1,31 @@
 {% assign awards = site.data.data.awards %}
 {% if awards %}
-<section class="section awards-section">
+<section class="section awards-section reveal">
   <h2 class="section-title">
     <span class="fa-stack fa-xs">
       <i class="fas fa-circle fa-stack-2x"></i>
-      <i class="fas fa-briefcase fa-stack-1x fa-inverse"></i>
+      <i class="fas fa-award fa-stack-1x fa-inverse"></i>
     </span>
-    {{ awards.title }}
+    {% include i18n-inline.html value=awards.title %}
   </h2>
 
   {% for award in awards.info %}
-  <div class="item">
+  <div class="item timeline-card reveal">
 
     <div class="meta">
 
       <div class="upper-row">
-        <h3 class="job-title">{{ award.award }}</h3>
+        <h3 class="job-title">{% include i18n-inline.html value=award.award %}</h3>
         <div class="time">{{ award.time }}</div>
       </div><!--//upper-row-->
 
-      <div class="company">{{ award.company }}</div>
+      <div class="company">{% include i18n-inline.html value=award.company %}</div>
 
     </div><!--//meta-->
 
     {% if award.details %}
     <div class="details">
-      {{ award.details | markdownify }}
+      {% include i18n-block.html value=award.details %}
     </div><!--//details-->
     {% endif %}
 

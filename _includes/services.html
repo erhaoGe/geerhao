@@ -1,0 +1,27 @@
+{% assign services = site.data.data.services %}
+{% if services %}
+<section class="section services-section reveal">
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-hands-helping fa-stack-1x fa-inverse"></i>
+    </span>
+    {% include i18n-inline.html value=services.title %}
+  </h2>
+
+  {% for service in services.info %}
+  <div class="item timeline-card reveal">
+    <div class="meta">
+      <div class="upper-row">
+        <h3 class="job-title">{% include i18n-inline.html value=service.title %}</h3>
+        <div class="time">{{ service.time }}</div>
+      </div>
+    </div>
+
+    <div class="details">
+      {% include i18n-block.html value=service.details %}
+    </div>
+  </div>
+  {% endfor %}
+</section>
+{% endif %}

@@ -2,26 +2,32 @@
   <ul class="list-unstyled contact-list">
 
     {% if sidebar.email %}
-    <li class="email"><i class="fas fa-envelope"></i>
+    <li class="email reveal"><i class="fas fa-envelope"></i>
       <a href="mailto:{{ sidebar.email }}">{{ sidebar.email }}</a>
     </li>
     {% endif %}
 
     {% if sidebar.phone %}
-    <li class="phone"><i class="fas fa-phone"></i>
+    <li class="phone reveal"><i class="fas fa-phone"></i>
       <a href="tel:{{ sidebar.phone }}">{{ sidebar.phone }}</a>
     </li>
     {% endif %}
 
+    {% if sidebar.location %}
+    <li class="location reveal"><i class="fas fa-map-marker-alt"></i>
+      <span>{% include i18n-inline.html value=sidebar.location %}</span>
+    </li>
+    {% endif %}
+
     {% if sidebar.citizenship %}
-    <li class="phone"><i class="fas fa-passport"></i>
-      <a href="">{{ sidebar.citizenship }}</a>
+    <li class="citizenship reveal"><i class="fas fa-passport"></i>
+      <span>{% include i18n-inline.html value=sidebar.citizenship %}</span>
     </li>
     {% endif %}
 
     {% if sidebar.timezone %}
-    <li class="timezone"><i class="fas fa-clock"></i>
-      <a href="">{{ sidebar.timezone }}</a>
+    <li class="timezone reveal"><i class="fas fa-clock"></i>
+      <span>{% include i18n-inline.html value=sidebar.timezone %}</span>
     </li>
     {% endif %}
 
@@ -32,13 +38,13 @@
     {% endif %}
 
     {% if sidebar.website %}
-    <li class="website"><i class="fas fa-globe-americas"></i>
-      <a href="http://{{ sidebar.website }}" target="_blank">{{ sidebar.website }}</a>
+    <li class="website reveal"><i class="fas fa-globe-americas"></i>
+      <a href="https://{{ sidebar.website }}" target="_blank">{{ sidebar.website }}</a>
     </li>
     {% endif %}
 
     {% if sidebar.linkedin %}
-    <li class="linkedin"><i class="fab fa-linkedin"></i>
+    <li class="linkedin reveal"><i class="fab fa-linkedin"></i>
       <a href="https://linkedin.com/in/{{ sidebar.linkedin }}" target="_blank">{{ sidebar.linkedin }}</a>
     </li>
     {% endif %}
@@ -50,25 +56,25 @@
     {% endif %}
 
     {% if sidebar.github %}
-    <li class="github"><i class="fab fa-github"></i>
-      <a href="http://github.com/{{ sidebar.github }}" target="_blank">{{ sidebar.github }}</a>
+    <li class="github reveal"><i class="fab fa-github"></i>
+      <a href="https://github.com/{{ sidebar.github }}" target="_blank">{{ sidebar.github }}</a>
     </li>
     {% endif %}
 
     {% if sidebar.gitlab %}
     <li class="gitlab"><i class="fab fa-gitlab"></i>
-      <a href="http://gitlab.com/{{ sidebar.gitlab }}" target="_blank">{{ sidebar.gitlab }}</a>
+      <a href="https://gitlab.com/{{ sidebar.gitlab }}" target="_blank">{{ sidebar.gitlab }}</a>
     </li>
     {% endif %}
 
     {% if sidebar.bitbucket %}
     <li class="bitbucket"><i class="fab fa-bitbucket"></i>
-      <a href="http://bitbucket.com/{{ sidebar.bitbucket }}" target="_blank">{{ sidebar.bitbucket }}</a>
+      <a href="https://bitbucket.com/{{ sidebar.bitbucket }}" target="_blank">{{ sidebar.bitbucket }}</a>
     </li>
     {% endif %}
 
     {% if sidebar.twitter %}
-    <li class="twitter"><i class="fab fa-twitter"></i>
+    <li class="twitter reveal"><i class="fab fa-twitter"></i>
       <a href="https://twitter.com/{{ sidebar.twitter }}" target="_blank">{{ sidebar.twitter }}</a>
     </li>
     {% endif %}
@@ -91,9 +97,21 @@
     </li>
     {% endif %}
 
-    {% if sidebar.pdf %}
-    <li class="pdf"><i class="fas fa-file-pdf"></i>
-      <a href="{{ sidebar.pdf }}" target="_blank">Resume PDF</a>
+    {% if sidebar.pdf_zh %}
+    <li class="pdf reveal"><i class="fas fa-file-pdf"></i>
+      <a href="{{ site.baseurl }}/{{ sidebar.pdf_zh }}" target="_blank">
+        <span class="lang-content lang-inline lang-zh">中文简历 PDF</span>
+        <span class="lang-content lang-inline lang-en">Chinese CV PDF</span>
+      </a>
+    </li>
+    {% endif %}
+
+    {% if sidebar.pdf_en %}
+    <li class="pdf reveal"><i class="fas fa-file-pdf"></i>
+      <a href="{{ site.baseurl }}/{{ sidebar.pdf_en }}" target="_blank">
+        <span class="lang-content lang-inline lang-zh">英文简历 PDF</span>
+        <span class="lang-content lang-inline lang-en">English CV PDF</span>
+      </a>
     </li>
     {% endif %}
 

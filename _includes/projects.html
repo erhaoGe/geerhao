@@ -1,38 +1,45 @@
 {% assign projects = site.data.data.projects %}
 {% if projects %}
-<section class="section projects-section">
+<section class="section projects-section reveal">
 
   <h2 class="section-title">
     <span class="fa-stack fa-xs">
       <i class="fas fa-circle fa-stack-2x"></i>
       <i class="fas fa-archive fa-stack-1x fa-inverse"></i>
     </span>
-    {{ projects.title }}
+    {% include i18n-inline.html value=projects.title %}
   </h2>
 
   {% if projects.intro %}
   <div class="intro">
-      <p>{{ projects.intro }}</p>
+      {% include i18n-block.html value=projects.intro %}
   </div><!--//intro-->
   {% endif %}
 
   {% for project in projects.assignments %}
-    <div class="item">
+    <div class="item project-card reveal">
 
-      <span class="project-title">
+      <div class="project-header">
         {% if project.link %}
-        <a href="{{ project.link }}" target="_blank">{{ project.title }}</a>
+        <a href="{{ project.link }}" target="_blank" rel="noopener">{% include i18n-inline.html value=project.title %}</a>
         {% else %}
-        {{ project.title }}
+        {% include i18n-inline.html value=project.title %}
         {% endif %}
-      </span>
-	  
-	  {% if project.time %}
-      - <span class="project-time">{{ project.time }}</span>
+      </div>
+
+      <div class="project-meta">
+      {% if project.university %}
+      <span class="project-pill">{% include i18n-inline.html value=project.university %}</span>
       {% endif %}
+      {% if project.time %}
+      <span class="project-pill">{{ project.time }}</span>
+      {% endif %}
+      </div>
 
       {% if project.tagline %}
-      - <span class="project-tagline">{{ project.tagline }}</span>
+      <div class="project-tagline">
+        {% include i18n-block.html value=project.tagline %}
+      </div>
       {% endif %}
 
     </div><!--//item-->

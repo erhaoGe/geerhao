@@ -8,11 +8,25 @@
     {% endif %}
 
     {% if sidebar.name %}
-    <h1 class="name">{{ sidebar.name }}</h1>
+    <h1 class="name">{% include i18n-inline.html value=sidebar.name %}</h1>
     {% endif %}
 
     {% if sidebar.tagline %}
-    <h3 class="tagline">{{ sidebar.tagline }}</h3>
+    <h3 class="tagline">{% include i18n-inline.html value=sidebar.tagline %}</h3>
+    {% endif %}
+
+    {% if sidebar.bio %}
+    <div class="profile-bio">
+      {% include i18n-block.html value=sidebar.bio %}
+    </div>
+    {% endif %}
+
+    {% if sidebar.highlights %}
+    <div class="profile-highlights">
+      {% for highlight in sidebar.highlights %}
+      <span class="highlight-pill">{% include i18n-inline.html value=highlight %}</span>
+      {% endfor %}
+    </div>
     {% endif %}
 
   </div><!--//profile-container-->

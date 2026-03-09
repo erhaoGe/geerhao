@@ -3,14 +3,14 @@
 <div class="languages-container container-block">
 
   <h2 class="container-block-title">
-    {{ languages.title }}
+    {% include i18n-inline.html value=languages.title %}
   </h2>
 
   <ul class="list-unstyled interests-list">
     {% for language in languages.info %}
-    <li>
-      {{ language.idiom }}
-      <span class="lang-desc">({{ language.level }})</span>
+    <li class="reveal">
+      {% include i18n-inline.html value=language.idiom %}
+      <span class="lang-desc">({% include i18n-inline.html value=language.level %})</span>
     </li>
     {% endfor %}
   </ul>

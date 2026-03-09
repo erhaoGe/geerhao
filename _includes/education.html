@@ -4,45 +4,45 @@
   <div class="education-container container-block">
 
     <h2 class="container-block-title">
-      {{ education.title }}
+      {% include i18n-inline.html value=education.title %}
     </h2>
 
     {% for graduation in education.info %}
-    <div class="item">
-      <h4 class="degree">{{ graduation.degree }}</h4>
-      <h5 class="meta">{{ graduation.university }}</h5>
+    <div class="item timeline-card reveal">
+      <h4 class="degree">{% include i18n-inline.html value=graduation.degree %}</h4>
+      <h5 class="meta">{% include i18n-inline.html value=graduation.university %}</h5>
       <div class="time">{{ graduation.time }}</div>
     </div><!--//item-->
     {% endfor %}
 
   </div><!--//education-container-->
   {% else %}
-  <section class="section educations-section">
+  <section class="section educations-section reveal">
 
     <h2 class="section-title">
       <span class="fa-stack fa-xs">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fas fa-graduation-cap fa-stack-1x fa-inverse"></i>
       </span>
-      {{ education.title }}
+      {% include i18n-inline.html value=education.title %}
     </h2>
 
     {% for graduation in education.info %}
-    <div class="item">
+    <div class="item timeline-card reveal">
 
       <div class="meta">
 
         <div class="upper-row">
-          <h3 class="degree">{{ graduation.degree }}</h3>
+          <h3 class="degree">{% include i18n-inline.html value=graduation.degree %}</h3>
           <div class="time">{{ graduation.time }}</div>
         </div><!--//upper-row-->
 
-        <div class="university">{{ graduation.university }}</div>
+        <div class="university">{% include i18n-inline.html value=graduation.university %}</div>
       </div><!--//meta-->
 
       {% if graduation.details %}
       <div class="details">
-        {{ graduation.details | markdownify }}
+        {% include i18n-block.html value=graduation.details %}
       </div><!--//details-->
       {% endif %}
 

@@ -1,168 +1,530 @@
-#
-# Be aware that even a small syntax error here can lead to failures in output.
-#
+site_language: zh
 
 sidebar:
-    position: right # position of the sidebar : left or right
-    about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
-    education: False # set to False if you want education in main section instead of in sidebar
-
-    # Profile information
-    name: Erhao Ge (Ethan)
-    tagline: PhD in Human Biology and Evolution, Anthropology department, University College London,UK
-    avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
-
-    # Sidebar links
-    email: geerhao@gmail.com
-    phone: +44 07511 750443
-    timezone: GMT Timezone
-    citizenship:
-    website:  #do not add http://
-    linkedin: 
-    xing: 
-    github: erhaoGe
-    telegram: # add your nickname without '@' sign
-    gitlab:
-    bitbucket:
-    twitter: Erhao_Ge
-    stack-overflow: # Number/Username, e.g. 123456/alandoe
-    codewars:
-    goodreads: # Number-Username, e.g. 123456-alandoe
-    pdf: https://maifile.cn/est/d6628633c0325d/pdf
-
-    languages:
-      title: Languages
-      info:
-        - idiom: Chinese
-          level: Native
-
-        - idiom: English
-          level: Professional
+  position: left
+  about: false
+  education: false
+  name:
+    zh: 葛二豪
+    en: Erhao Ge
+  tagline:
+    zh: 长沙中南大学社会学系讲师
+    en: Lecturer, Department of Sociology, Central South University, Changsha
+  bio:
+    zh: |
+      现任中南大学社会学系讲师，并于 2025 年 3 月至 2026 年 3 月担任伦敦大学学院荣誉研究员。研究聚焦计算社会科学、进化人类学与人类行为生态学，长期关注合作、宗教、社会网络与复杂社会形成机制。
+    en: |
+      I am currently a Lecturer in the Department of Sociology at Central South University and an Honorary Research Fellow at University College London from March 2025 to March 2026. My work focuses on computational social science, evolutionary anthropology, and human behavioural ecology, with sustained attention to cooperation, religion, social networks, and the emergence of complex societies.
+  highlights:
+    - zh: 计算社会科学
+      en: Computational Social Science
+    - zh: 进化人类学
+      en: Evolutionary Anthropology
+    - zh: 社会网络分析
+      en: Social Network Analysis
+  avatar: profile.png
+  email: erhao.ge.20@ucl.ac.uk
+  phone: "+86 18038146184"
+  citizenship:
+    zh: 中国
+    en: Chinese
+  location:
+    zh: 中国长沙
+    en: Changsha, China
+  timezone:
+    zh: 中国标准时间（UTC+8）
+    en: China Standard Time (UTC+8)
+  website: erhaoge.github.io/geerhao
+  linkedin:
+  github: erhaoGe
+  twitter: Erhao_Ge
+  pdf_en: assets/files/English_CV.pdf
+  pdf_zh: assets/files/葛二浩_中文简历_最新.pdf
+  languages:
+    title:
+      zh: 语言能力
+      en: Languages
+    info:
+      - idiom:
+          zh: 中文
+          en: Chinese
+        level:
+          zh: 母语
+          en: Native
+      - idiom:
+          zh: 英语
+          en: English
+        level:
+          zh: 专业工作能力
+          en: Professional
+  interests:
+    title:
+      zh: 研究兴趣
+      en: Research Interests
+    info:
+      - item:
+          zh: 合作、竞争与亲属关系的演化
+          en: Evolution of cooperation, competition, and kinship
+      - item:
+          zh: 宗教、文化适应与复杂社会
+          en: Religion, cultural adaptation, and complex societies
+      - item:
+          zh: 社会网络分析、贝叶斯建模与人口数据研究
+          en: Social network analysis, Bayesian modelling, and demographic data
 
 career-profile:
-    title: Career Profile
-    summary: In broad terms, my work falls under the field of computational social science. More specifically, I specialise in evolutionary anthropology. Over the past few years, I have approached the evolution of human social organisation and behavioural patterns from a behavioural ecology perspective, particularly focusing on their role in the transition from small, simple communities to large, complex societies. At the same time, I actively embrace interdisciplinary approaches. I enjoy engaging with perspectives from other disciplines to deepen my understanding of human behaviour and social structures. I am also open to exploring and adopting innovative scientific methods to enhance my research.
+  title:
+    zh: 个人简介
+    en: Profile
+  summary:
+    zh: |
+      我是一名从**进化人类学**视角开展**计算社会科学**研究的学者，现任**长沙中南大学社会学系讲师**，并兼任**伦敦大学学院荣誉研究员**。我的研究主要关注家庭与社会群体中的合作与竞争机制，以及文化模式如何在特定生态背景中适应并促进合作行为。
+
+      在方法上，我结合**经济博弈实验**、**数学建模**、**社会网络分析**与**人口数据分析**展开研究，主要使用 R 进行实证分析，也熟悉贝叶斯建模等定量方法。我希望通过跨学科研究进一步理解社会合作的演化过程，并为文化适应与社会行为塑造机制提供新的解释框架。
+    en: |
+      I am an academic working on **computational social science** from an **evolutionary anthropology** perspective. I currently serve as a **Lecturer in the Department of Sociology at Central South University** and as an **Honorary Research Fellow at University College London**. My research focuses on the evolutionary mechanisms of cooperation and competition within families and social groups, and on how cultural patterns adapt to ecological contexts to promote cooperative behaviour.
+
+      Methodologically, I combine **economic game experiments**, **mathematical modelling**, **social network analysis**, and **empirical demographic data analysis**, primarily using R. I also have experience with Bayesian modelling and related quantitative approaches. Through interdisciplinary research, I aim to deepen our understanding of the evolutionary processes underlying social cooperation and the mechanisms shaping human social behaviour.
+
 education:
-    title: Education
-    info:
-      - degree: PhD in Human Biology and Evolution
-        university: University College London, UK
-        time: 2020-2024
-        details: |
-          During my PhD, my broad research interests have centred on the evolution of cooperation and religion, and how these two fundamental concepts are associated with each other. I analyse social network data and demographic data, as well as use mathematical modelling, to explore the benefits of religious practices. During this time, I have published four papers in SCI journals as the lead author, marking significant milestones in this intellectual journey.
-          
-      - degree: Master's Degree in Ecology
-        university:  Lanzhou University, CHINA
-        time: 2017-2020
-        details: |
-          During my master's degree in ecology at Lanzhou University, which I entered through a recommendation-based admission,I worked under the supervision of Professor Ruth Mace (Fellow of the British Academy). My research focused on the evolution of human cooperative behaviour using statistical modelling. I published one SCI article as the first author and awarded a National Graduate Scholarship.
-          
-      - degree: Bachelor's Degree in Biotechnology
-        university:  Lanzhou University, CHINA
-        time: 2013-2017
-        details: |
-          During my undergraduate studies at Lanzhou University, I focused on learning the fundamentals of biology and gaining experimental skills from both microscopic and laboratory perspectives.
+  title:
+    zh: 教育经历
+    en: Education
+  info:
+    - degree:
+        zh: 荣誉研究员
+        en: Honorary Research Fellow
+      university:
+        zh: 英国伦敦大学学院
+        en: University College London, UK
+      time: 2025.03 - 2026.03
+      details:
+        zh: |
+          在 UCL 继续开展人类行为生态学与计算社会科学相关研究，维持国际合作与学术交流。
+        en: |
+          Continuing research in human behavioural ecology and computational social science at UCL while maintaining international collaborations.
+    - degree:
+        zh: 人类生物学与进化学博士
+        en: PhD in Human Biology and Evolution
+      university:
+        zh: 英国伦敦大学学院
+        en: University College London, UK
+      time: 2020.09 - 2025.02
+      details:
+        zh: |
+          导师：**Ruth Mace（FBA）** 与 **Mark Dyble**。论文题目：**The Behavioural Ecology of Costly Religious Practices**。研究围绕合作演化、宗教行为、社会网络与人口数据建模展开，并以第一作者身份发表多篇 SCI 论文。
+        en: |
+          Supervisors: **Prof. Ruth Mace (FBA)** and **Dr. Mark Dyble**. Thesis title: **The Behavioural Ecology of Costly Religious Practices**. My doctoral research focused on cooperation, religion, social networks, and demographic modelling, and resulted in multiple SCI publications as lead author.
+    - degree:
+        zh: 人类行为生态学硕士
+        en: Master's Degree in Human Behavioural Ecology
+      university:
+        zh: 中国兰州大学
+        en: Lanzhou University, China
+      time: 2017.09 - 2020.06
+      details:
+        zh: |
+          导师：**Ruth Mace（FBA）** 与 **杜娟**。论文题目：**Evolutionary Mechanism of Costly Behaviour in the Eastern Qinghai-Tibet Plateau**。研究聚焦高原地区高代价行为的演化机制，并以第一作者发表 SCI 论文。
+        en: |
+          Supervisors: **Prof. Ruth Mace (FBA)** and **Prof. Juan Du**. Dissertation title: **Evolutionary Mechanism of Costly Behaviour in the Eastern Qinghai-Tibet Plateau**. My master's research examined costly behaviour in plateau populations and led to an SCI publication as first author.
+    - degree:
+        zh: 生物技术学士
+        en: Bachelor's Degree in Biotechnology
+      university:
+        zh: 中国兰州大学
+        en: Lanzhou University, China
+      time: 2013.09 - 2017.06
+      details:
+        zh: |
+          本科阶段系统学习生物学基础理论与实验技能，为后续跨学科研究奠定基础。
+        en: |
+          During my undergraduate study, I received systematic training in biology and laboratory methods, which later supported my interdisciplinary research trajectory.
 
 experiences:
-    title: Experiences
-    info:
-      - role: Teaching Assistant in Anthropology Department
-        time: 2023-2024；2024-2025
-        details: I am a Teaching Assistant in the Anthropology Department at UCL for the 2023-2024 and 2024-2025 academic years. In these roles, I facilitate the learning process for undergraduate students by organising tutorial activities, leading tutorial groups in biological anthropology, human ecology, and evolutionary medicine courses, and providing feedback on coursework. These positions have enhanced my ability to communicate complex concepts in a clear and accessible way, which is a critical skill for undergraduate teaching. Additionally, I am also a Teaching Assistant for the Research Methods in Biological Anthropology course. I am responsible for grading assignments for the Human Behavioural Ecology course.
-            
+  title:
+    zh: 工作与教学经历
+    en: Experience
+  info:
+    - role:
+        zh: 讲师
+        en: Lecturer
+      company:
+        zh: 中南大学社会学系
+        en: Department of Sociology, Central South University
+      time: 2025 - 至今
+      details:
+        zh: |
+          现任长沙中南大学社会学系讲师，承担教学与科研工作，持续推进计算社会科学、进化人类学及相关交叉研究方向的发展。
+        en: |
+          I currently serve as a Lecturer in the Department of Sociology at Central South University, contributing to both teaching and research in computational social science, evolutionary anthropology, and related interdisciplinary fields.
+    - role:
+        zh: 荣誉研究员
+        en: Honorary Research Fellow
+      company:
+        zh: 伦敦大学学院
+        en: University College London
+      time: 2025.03 - 2026.03
+      details:
+        zh: |
+          在 UCL 延续博士后的研究合作，参与国际学术交流与相关研究项目推进。
+        en: |
+          Serving as an Honorary Research Fellow at UCL and continuing international research collaboration following my doctoral work.
+    - role:
+        zh: 教学助理
+        en: Teaching Assistant
+      company:
+        zh: 伦敦大学学院人类学系
+        en: Department of Anthropology, University College London
+      time: 2024.09 - 2024.12
+      details:
+        zh: |
+          课程包括 **ANTH0107/0114 Research Methods in Evolutionary Anthropology and Statistics for Social Research** 与 **ANTH0165 Evolutionary Medicine**，主要负责协助授课、组织讨论、批改作业与课程评估。
+        en: |
+          Supported **ANTH0107/0114 Research Methods in Evolutionary Anthropology and Statistics for Social Research** and **ANTH0165 Evolutionary Medicine**, with responsibilities including lecture assistance, tutorials, marking, and assessment.
+    - role:
+        zh: 评估助理
+        en: Assessment Assistant
+      company:
+        zh: 伦敦大学学院人类学系
+        en: Department of Anthropology, University College London
+      time: 2024.05 - 2024.06
+      details:
+        zh: |
+          负责 **ANTH0044 Human Behavioural Ecology** 课程的作业评分与评估工作。
+        en: |
+          Responsible for marking and assessment in **ANTH0044 Human Behavioural Ecology**.
+    - role:
+        zh: 教学助理
+        en: Teaching Assistant
+      company:
+        zh: 伦敦大学学院人类学系
+        en: Department of Anthropology, University College London
+      time: 2023.09 - 2024.06
+      details:
+        zh: |
+          负责 **ANTH0008 Introduction to Biological Anthropology** 的讨论课组织、带领与评分工作。
+        en: |
+          Organised and led tutorials, marking, and assessment for **ANTH0008 Introduction to Biological Anthropology**.
+
 awards:
-    title: Scholarships And Awards
-    info: 
-      - time: 2022 
-        award: Chinese Government Award for Outstanding Self-financed Students Abroad
-        details: |
-          Recipient of the Chinese Government Award for Outstanding Self-financed Students Abroad, recognizing academic excellence and achievements while studying overseas.
-      - time: 2020
-        award: Fully Funded PhD Scholarship from European Research Commission
-        details: |
-          Selected for a highly competitive fully funded 4-year PhD scholarship awarded by the European Research Commission, supporting advanced research at UCL.
-      - time: 2019
-        award: National Scholarship for Chinese Postgraduate Studies
-        details: |
-          Recipient of the National Scholarship for Chinese Postgraduate Students, reflecting exceptional academic performance and contributions. 
+  title:
+    zh: 奖学金与荣誉
+    en: Scholarships and Awards
+  info:
+    - time: 2023
+      award:
+        zh: NSF 资助学者
+        en: NSF Funded Scholar
+      company:
+      details:
+        zh: |
+          通过全球竞争性遴选获得美国国家自然科学基金资助，赴耶鲁大学使用 HRAF World Cultures 数据库开展跨文化研究。
+        en: |
+          Selected through a global competitive process for full NSF funding to conduct research at Yale University using the HRAF World Cultures database for cross-cultural analysis.
+    - time: 2022
+      award:
+        zh: 国家优秀自费留学生奖学金
+        en: Chinese Government Award for Outstanding Non-Government-Funded PhD Students Abroad
+      company:
+      details:
+        zh: |
+          教育部设立的国家级奖项，表彰在海外顶尖高校取得突出研究成果的中国自费博士研究生。
+        en: |
+          A prestigious national award from the China Ministry of Education recognising exceptional research achievements by Chinese self-funded PhD students abroad.
+    - time: 2020
+      award:
+        zh: 欧洲研究委员会全额博士奖学金
+        en: European Research Council Fully Funded PhD Scholarship
+      company:
+      details:
+        zh: |
+          获得 ERC 提供的全额博士资助，在伦敦大学学院开展博士研究。
+        en: |
+          Awarded a fully funded PhD scholarship supported by the European Research Council.
+    - time: 2019
+      award:
+        zh: 中国研究生国家奖学金
+        en: National Graduate Scholarship
+      company:
+      details:
+        zh: |
+          因硕士阶段学术成绩与研究表现突出获得国家奖学金。
+        en: |
+          Received for outstanding academic performance during postgraduate study in China.
+    - time: 2019
+      award:
+        zh: 优秀学术海报奖
+        en: Outstanding Academic Poster
+      company:
+      details:
+        zh: |
+          获评中国动物学会动物行为学分会优秀学术海报。
+        en: |
+          Awarded for Best Academic Poster at the 2019 Chinese Zoological Society Animal Behavior Conference.
 
 publications:
-    title: Publications
-    intro: 
-    papers:
-      - title: Religiosity and gender bias structure social networks
-        link: "https://doi.org/10.1017/ehs.2024.16"
-        authors: Ge, E., Cairang, D., Mace, R.
-        time: 2024
-
-      - title: Sex Differences in Costly Signaling in Rural Western China
-        link: "https://doi.org/10.1016/j.evolhumbehav.2023.02.009"
-        authors: Cairang, D.*, Ge, E.*, Du, J. & Mace, R.
-        time: 2023
-
-      - title: Sex inequality driven by dispersal
-        link: "https://doi.org/10.1016/j.cub.2022.12.027"
-        authors: Chen, Y., Ge, E., Zhou, L., Du, J. & Mace, R. 
-        time: 2023
-        
-      - title: Studying human culture with small datasets and evolutionary models
-        link: "https://doi.org/10.1098/rspb.2023.0753"
-        authors: Micheletti, A.J., Ge, E., Zhou, L., Chen, Y., Zhang, H., Du, J. & Mace, R. 
-        time: 2023
-            
-      - title: Religious celibacy brings inclusive fitness benefits
-        link: "https://doi.org/10.1098/rspb.2022.0965"
-        authors: Micheletti, A.J.*, Ge, E.*, Zhou, L.*, Chen, Y., Zhang, H., Du, J. et al.
-        time: 2022
-        
-      - title: Monks relax sibling competition over parental resources in Tibetan populations
-        link: "https://doi.org/10.1093/beheco/arac059"
-        authors: Zhou, L.*, Ge, E.*, Micheletti, A.J., Chen, Y., Du, J. & Mace, R.
-        time: 2022                   
-
-      - title: How evolutionary behavioural sciences can help us understand behaviour in a pandemic
-        link: "https://doi.org/10.1093/emph/eoaa038"
-        authors: Arnot, M., Brandl, E., Campbell, O., Chen, Y., Du, J., Dyble, M., Ge,E., et al.
-        time: 2020  
-               
-      - title: Large-scale cooperation driven by reputation, not fear of divine punishment
-        link: "https://doi.org/10.1098/rsos.190991"
-        authors: Ge, E. *, Chen, Y. *, Wu, J. & Mace, R.
-        time: 2019
+  title:
+    zh: 代表论文
+    en: Selected Publications
+  intro:
+    zh: 近年主要学术成果涵盖宗教、合作、性别不平等、社会网络与文化演化等主题。
+    en: Selected publications covering religion, cooperation, sex inequality, social networks, and cultural evolution.
+  papers:
+    - title:
+        zh: 宗教性与性别偏向共同塑造社会网络结构
+        en: Religiosity and gender bias structure social networks
+      link: https://doi.org/10.1017/ehs.2024.16
+      authors: Ge, E., Cairang, D., Mace, R.
+      journal:
+        zh: Evolutionary Human Sciences
+        en: Evolutionary Human Sciences
+      time: 2024
+    - title:
+        zh: 操作性别比解释劳动负担中的性别不平等
+        en: Gender inequality in workloads explained by operational sex ratio
+      authors: Chen, Y., Ge, E., Zhou, L., Du, J., & Mace, R.
+      journal:
+        zh: iScience
+        en: iScience
+      time: 2024
+    - title:
+        zh: 中国西部农村社会中代价信号的性别差异
+        en: Sex Differences in Costly Signaling in Rural Western China
+      link: https://doi.org/10.1016/j.evolhumbehav.2023.02.009
+      authors: Cairang, D.*, Ge, E.*, Du, J., & Mace, R.
+      journal:
+        zh: Evolution and Human Behavior
+        en: Evolution and Human Behavior
+      time: 2023
+    - title:
+        zh: 迁移模式驱动的性别不平等
+        en: Sex inequality driven by dispersal
+      link: https://doi.org/10.1016/j.cub.2022.12.027
+      authors: Chen, Y., Ge, E., Zhou, L., Du, J., & Mace, R.
+      journal:
+        zh: Current Biology
+        en: Current Biology
+      time: 2023
+    - title:
+        zh: 用小数据与进化模型研究人类文化
+        en: Studying human culture with small datasets and evolutionary models
+      link: https://doi.org/10.1098/rspb.2023.0753
+      authors: Micheletti, A. J., Ge, E., Zhou, L., Chen, Y., Zhang, H., Du, J., & Mace, R.
+      journal:
+        zh: Proceedings of the Royal Society B
+        en: Proceedings of the Royal Society B
+      time: 2023
+    - title:
+        zh: 宗教禁欲带来的包容性适应收益
+        en: Religious celibacy brings inclusive fitness benefits
+      link: https://doi.org/10.1098/rspb.2022.0965
+      authors: Micheletti, A. J.*, Ge, E.*, Zhou, L.*, Chen, Y., Zhang, H., Du, J., et al.
+      journal:
+        zh: Proceedings of the Royal Society B
+        en: Proceedings of the Royal Society B
+      time: 2022
+    - title:
+        zh: 藏族群体中僧侣身份可缓解兄弟间对父母资源的竞争
+        en: Monks relax sibling competition over parental resources in Tibetan populations
+      link: https://doi.org/10.1093/beheco/arac059
+      authors: Zhou, L.*, Ge, E.*, Micheletti, A. J., Chen, Y., Du, J., & Mace, R.
+      journal:
+        zh: Behavioral Ecology
+        en: Behavioral Ecology
+      time: 2022
+    - title:
+        zh: 进化行为科学如何帮助我们理解疫情中的行为
+        en: How evolutionary behavioural sciences can help us understand behaviour in a pandemic
+      link: https://doi.org/10.1093/emph/eoaa038
+      authors: Arnot, M., Brandl, E., Campbell, O. L. K., Chen, Y., Du, J., Dyble, M., Ge, E., et al.
+      journal:
+        zh: Evolution, Medicine, and Public Health
+        en: Evolution, Medicine, and Public Health
+      time: 2020
+    - title:
+        zh: 大规模合作由声誉而非神罚恐惧驱动
+        en: Large-scale cooperation driven by reputation, not fear of divine punishment
+      link: https://doi.org/10.1098/rsos.190991
+      authors: Ge, E.*, Chen, Y.*, Wu, J., & Mace, R.
+      journal:
+        zh: Royal Society Open Science
+        en: Royal Society Open Science
+      time: 2019
 
 projects:
-    title: Major Academic Invitations
-    intro: 
-    assignments:
-      - title: EHBEA Annual Conference Talk
-        link: "https://www.ehbea2024.com/"
-        time: Montpellier, France (2024)
-        
-      - title: Invited Guest Speaker
-        university: LEVYNA Laboratory, Masaryk University
-        time: Brno, Czech Republic (2023)
-        link: "https://www.levyna.cz/en/about-us/speaker-series"
-        tagline: "Invited to deliver a speaker series talk and conduct a workshop at LEVYNA Laboratory, Masaryk University. Explored collaborative opportunities and shared research insights."
-        
-      - title: Invited Summer Institute Participant
-        university: Yale University
-        time: USA (2023)
-        link: "https://hraf.yale.edu/summer-institute-2023-recap/"
-        tagline: "Selected to join the Summer Institute in Cross-Cultural Anthropological Research at Yale University, HRAF. Explored diverse anthropological perspectives."
+  title:
+    zh: 学术报告与交流
+    en: Academic Communication
+  intro:
+    zh: 近年参与的重要会议报告、受邀讲座与国际学术交流活动。
+    en: Selected talks, invited lectures, and international academic activities in recent years.
+  assignments:
+    - title:
+        zh: 第 19 届“春晖杯”中国留学人员创新创业大赛特邀报告
+        en: Invited Talk at the 19th Spring Sunlight Cup China International Student Innovation and Entrepreneurship Conference
+      university:
+        zh: 北京，中国
+        en: Beijing, China
+      time: 2024
+      tagline:
+        zh: 受邀作大会报告，并获全额资助参与学术交流。
+        en: Invited to deliver a conference talk and selected for full funding to participate.
+    - title:
+        zh: 欧洲人类行为与进化协会年会海报
+        en: EHBEA Annual Conference Poster
+      university:
+        zh: 蒙彼利埃，法国
+        en: Montpellier, France
+      time: 2024
+      link: https://www.ehbea2024.com/
+      tagline:
+        zh: 在 EHBEA 年会展示研究海报并与相关领域学者交流。
+        en: Presented a research poster at EHBEA and discussed ongoing work with scholars in the field.
+    - title:
+        zh: 邀请报告嘉宾
+        en: Invited Guest Speaker
+      university:
+        zh: Masaryk University, LEVYNA Laboratory
+        en: LEVYNA Laboratory, Masaryk University
+      time: 2023.12
+      link: https://www.levyna.cz/en/about-us/speaker-series
+      tagline:
+        zh: 受邀在 LEVYNA Laboratory 做专题报告并主持研讨交流。
+        en: Invited to deliver a speaker-series talk at LEVYNA Laboratory and lead scholarly discussion.
+    - title:
+        zh: 耶鲁大学 HRAF 暑期项目成员
+        en: HRAF Summer Institute Participant
+      university:
+        zh: 耶鲁大学，美国
+        en: Yale University, USA
+      time: 2023
+      link: https://hraf.yale.edu/summer-institute-2023-recap/
+      tagline:
+        zh: 使用 HRAF World Cultures 数据库开展跨文化研究训练。
+        en: Participated in cross-cultural research training using the HRAF World Cultures database.
+    - title:
+        zh: FRESH 年会报告
+        en: FRESH Annual Conference Talk
+      university:
+        zh: 巴黎，法国
+        en: Paris, France
+      time: 2023
+      link: https://fresh-cnrs.org/events/
+      tagline:
+        zh: 在法国进化人类学网络年会上汇报当前研究项目。
+        en: Presented ongoing research at the French Network for the Evolutionary Study of Humans annual conference.
+    - title:
+        zh: 人类行为与进化学会年会报告
+        en: HBES Annual Conference Talk
+      university:
+        zh: 棕榈泉，美国
+        en: Palm Springs, USA
+      time: 2023
+      link: https://conference2023.hbes.com/
+      tagline:
+        zh: 在 HBES 年会上作口头报告并参与国际学术讨论。
+        en: Delivered a talk at the Human Behavior and Evolution Society annual meeting.
+    - title:
+        zh: 欧洲人类行为与进化协会年会报告
+        en: EHBEA Annual Conference Talk
+      university:
+        zh: 伦敦，英国
+        en: London, UK
+      time: 2023
+      link: https://ehbea2023.wixsite.com/ehbea-2023
+      tagline:
+        zh: 在伦敦举行的 EHBEA 年会报告研究进展。
+        en: Presented research progress at the EHBEA annual conference in London.
+    - title:
+        zh: 欧洲人类行为与进化协会年会海报
+        en: EHBEA Annual Conference Poster
+      university:
+        zh: 线上
+        en: Online
+      time: 2022
+      tagline:
+        zh: 线上展示研究海报。
+        en: Presented a poster online at EHBEA.
+    - title:
+        zh: 国际行为生态学会年会报告
+        en: ISBE Annual Conference Talk
+      university:
+        zh: 线上
+        en: Online
+      time: 2022
+      tagline:
+        zh: 在 ISBE 年会上作口头报告。
+        en: Delivered a talk at the International Society for Behavioral Ecology annual conference.
+    - title:
+        zh: 图卢兹高等研究院暑期学校
+        en: IAST Summer School Participant
+      university:
+        zh: 线上
+        en: Online
+      time: 2021
+      tagline:
+        zh: 参与 Institute for Advanced Study in Toulouse 暑期学校。
+        en: Participated in the Institute for Advanced Study in Toulouse summer school.
 
-      - title: FRESH 4th Annual Conference Talk
-        link: "https://fresh-cnrs.org/events/"
-        time: Paris, France (2023)
+services:
+  title:
+    zh: 学术服务
+    en: Academic Service
+  info:
+    - title:
+        zh: 期刊审稿人
+        en: Peer Reviewer
+      time: Ongoing
+      details:
+        zh: |
+          为 **Trends in Cognitive Sciences**、**Evolution and Human Behavior**、**Evolutionary Human Sciences** 等期刊提供同行评审。
+        en: |
+          Served as a peer reviewer for journals including **Trends in Cognitive Sciences**, **Evolution and Human Behavior**, and **Evolutionary Human Sciences**.
+    - title:
+        zh: 工作坊联合组织者
+        en: Co-organiser
+      time: 2024.11
+      details:
+        zh: |
+          联合组织 UCL 工作坊 **Quantitative Comparative Anthropology: Methods and Applications**（2024 年 11 月 7 日至 8 日）。
+        en: |
+          Co-organised the UCL workshop **Quantitative Comparative Anthropology: Methods and Applications** on 7-8 November 2024.
+    - title:
+        zh: 读书与研究小组负责人
+        en: Reading and Research Group Lead
+      time: 2023 - 2024
+      details:
+        zh: |
+          在 UCL 持续主持 **Human Ecology and Evolution** 周度读书与研究小组，促进学术讨论与合作研究。
+        en: |
+          Led a weekly **Human Ecology and Evolution** reading and research group at UCL, facilitating discussion and collaborative research.
 
-      - title: HBES Annual Conference Talk
-        link: "https://conference2023.hbes.com/"
-        tagline: "Delivered a talk during the Human Behavior and Evolution Society (HBES) Annual Meeting held in Palm Springs, USA."
-        time: Palm Springs, USA (2023) 
-        
-      - title: EHBEA Annual Conference Talk
-        link: "https://ehbea2023.wixsite.com/ehbea-2023"
-        tagline: "Presented a talk at the European Human Behaviour & Evolution Association (EHBEA) Annual Conference in London, UK."
-        time: London, UK (2023)          
+skills:
+  title:
+    zh: 方法与工具
+    en: Methods and Research Toolkit
+  toolset:
+    - name:
+        zh: 社会网络分析
+        en: Social Network Analysis
+      level: 92%
+    - name:
+        zh: R 与人口数据分析
+        en: R and Demographic Data Analysis
+      level: 94%
+    - name:
+        zh: 贝叶斯建模
+        en: Bayesian Modelling
+      level: 86%
+    - name:
+        zh: 数学建模
+        en: Mathematical Modelling
+      level: 88%
+    - name:
+        zh: 经济博弈实验
+        en: Economic Game Experiments
+      level: 82%
 
-footer: >
-    Designed with <i class="fas fa-heart"></i> by <a href="https://erhaoge.github.io" target="_blank" rel="nofollow">Erhao Ge</a>
+footer:
+  zh: "© 葛二豪. 基于 Jekyll 构建，并部署于 GitHub Pages。"
+  en: "© Erhao Ge. Built with Jekyll and deployed on GitHub Pages."

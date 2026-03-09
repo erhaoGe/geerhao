@@ -1,0 +1,7 @@
+{% assign value = include.value %}
+{% if value %}
+  {% assign zh_value = value.zh | default: value %}
+  {% assign en_value = value.en | default: value %}
+  <span class="lang-content lang-inline lang-zh{% if include.class %} {{ include.class }}{% endif %}">{{ zh_value }}</span>
+  <span class="lang-content lang-inline lang-en{% if include.class %} {{ include.class }}{% endif %}">{{ en_value }}</span>
+{% endif %}

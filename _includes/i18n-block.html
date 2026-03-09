@@ -1,0 +1,11 @@
+{% assign value = include.value %}
+{% if value %}
+  {% assign zh_value = value.zh | default: value %}
+  {% assign en_value = value.en | default: value %}
+  <div class="lang-content lang-block lang-zh{% if include.class %} {{ include.class }}{% endif %}">
+    {{ zh_value | markdownify }}
+  </div>
+  <div class="lang-content lang-block lang-en{% if include.class %} {{ include.class }}{% endif %}">
+    {{ en_value | markdownify }}
+  </div>
+{% endif %}

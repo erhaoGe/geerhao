@@ -1,34 +1,74 @@
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
   body {
-    padding: 0;
+    padding: 84px 14px 24px;
+  }
+
+  .site-controls {
+    left: 14px;
+    right: 14px;
+    justify-content: space-between;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr;
+    gap: 18px;
   }
 
   .sidebar-wrapper {
     position: static;
-    width: inherit;
+    top: auto;
   }
 
-  .wrapper {
-    display: block;
+  .main-wrapper,
+  .sidebar-wrapper {
+    border-radius: 24px;
   }
 
   .main-wrapper {
-    padding: 30px;
+    padding: 16px;
   }
 
-  .main-wrapper .time {
-    position: static;
-    display: block;
-    margin-top: 5px;
+  .main-wrapper .section {
+    padding: 20px 18px;
+    border-radius: 22px;
   }
 
-  .main-wrapper .upper-row {
-    margin-bottom: 0;
+  .main-wrapper .upper-row,
+  .main-wrapper .publication-header {
+    flex-direction: column;
+  }
+
+  .main-wrapper .time,
+  .main-wrapper .publication-year {
+    align-self: flex-start;
+  }
+
+  .sidebar-wrapper .profile-container,
+  .sidebar-wrapper .container-block {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .sidebar-wrapper .name {
+    font-size: 32px;
+  }
+
+  .toolbar-note {
+    display: none;
   }
 }
+
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar-wrapper {
+    position: static;
+    top: auto;
+  }
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -53,12 +93,4 @@
   -moz-transition: width 2s ease-in-out;
   -o-transition: width 2s ease-in-out;
   transition: width 2s ease-in-out;
-}
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-}
-
-/* Ex-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1400px) {
 }

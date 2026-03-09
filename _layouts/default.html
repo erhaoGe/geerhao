@@ -2,12 +2,22 @@
 #Add "layout: compress" here to compress the html code
 ---
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<!--[if IE 8]> <html lang="zh-CN" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="zh-CN" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="zh-CN"> <!--<![endif]-->
 {% include head.html %}
 
-<body>
+<body class="lang-{{ site.data.data.site_language | default: 'zh' }}" data-default-lang="{{ site.data.data.site_language | default: 'zh' }}">
+  <div class="site-controls">
+    <div class="toolbar-note">
+      <span class="lang-content lang-inline lang-zh">学术主页</span>
+      <span class="lang-content lang-inline lang-en">Academic Profile</span>
+    </div>
+    <div class="language-switcher" aria-label="Language switcher">
+      <button class="lang-toggle is-active" type="button" data-set-lang="zh">中文</button>
+      <button class="lang-toggle" type="button" data-set-lang="en">EN</button>
+    </div>
+  </div>
   <div class="wrapper">
     {% include sidebar.html %}
 
@@ -22,4 +32,3 @@
 </body>
 
 </html>
-
