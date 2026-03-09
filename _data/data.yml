@@ -5,7 +5,7 @@ sidebar:
   about: false
   education: false
   name:
-    zh: 葛二豪
+    zh: 葛二浩
     en: Erhao Ge
   tagline:
     zh: 长沙中南大学社会学系讲师
@@ -526,5 +526,5 @@ skills:
       level: 82%
 
 footer:
-  zh: "© 葛二豪. 基于 Jekyll 构建，并部署于 GitHub Pages。"
+  zh: "© 葛二浩. 基于 Jekyll 构建，并部署于 GitHub Pages。"
   en: "© Erhao Ge. Built with Jekyll and deployed on GitHub Pages."
